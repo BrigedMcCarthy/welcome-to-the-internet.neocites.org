@@ -1,0 +1,75 @@
+body {
+  background: black;
+  font-family: Verdana;
+}
+p {
+  color: white;  
+  font-family: Verdana;
+  font-weight: bold;
+  /*-webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;*/
+  text-shadow: black 0px 0px 10px;
+}
+
+marquee { 
+  color: white;
+  font-family: Verdana;
+  text-shadow: black 0px 0px 10px;
+}
+
+h1 {
+  color: white;
+  font-family: Verdana;
+  font-weight: bold;
+  text-shadow: black 0px 0px 10px;
+}
+
+nav ul {
+  
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #e80605;
+  border-width: 2px;
+  border-radius: 10px;
+  font-family: Verdana;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #bb3600;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: DarkGrey;
+}
+
+.blurred
+{
+  z-index: -1;
+  border-style: solid; 
+  border-width: 3px; 
+/*  background-image: url("Ai2.png"); */
+  background-image: url("Kaguya.jpg");
+  width: 100vw;
+  height: 100vh;
+  filter: blur(10px);
+  position: absolute;
+  background-repeat: repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+
+.middlecoversecond{
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 550px;
+  position: center;
+  position: relative;
+  z-index: 1;
+  filter: blur(0px);
+}
