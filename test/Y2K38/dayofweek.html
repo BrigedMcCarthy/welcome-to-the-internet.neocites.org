@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>Demo: Current Day</h1>
+<p id="dayOfWeek"></p>
+<script>
+  const currentDate = new Date();
+  const dayOfWeek = currentDate.getDay();
+  document.getElementById("dayOfWeek").innerHTML = "Current Day of the Week (0-6): " + dayOfWeek;
+</script>
+</body>
+</html>

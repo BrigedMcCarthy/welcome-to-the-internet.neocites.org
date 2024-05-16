@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Moment.js Demo</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+  <h1>Demo: Using Moment.js</h1>
+  <p id="formattedDate"></p>
+  <script>
+    // Get the current date using Moment.js
+    var date = moment();
+    var currentDate = date.format('DD/MM/YYYY');
+    document.getElementById("formattedDate").innerHTML = "Current Date using Moment.js: " + currentDate;
+  </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<body>
+    <!-- The input widget to select a file from browse -->
+    <input type="file" id="file-input" />
+
+    <!-- testing purpose only, a markup to display the loaded file content -->
+    <h3>Loading a file:</h3>
+    <pre id="file-content"></pre>
+    <script>
+
+    // Place a listener to know when the page is loaded
+    window.addEventListener('load',function(e){
+      // If there is some persistent data on the browser called 'stored_data'
+      if( localStorage.getItem('stored_data')){
+        // We can do something with this data
+        // without asking a user interaction at first
+        // User interaction could be done in order to refresh the data ( file changed since storing in browser cache )
+        doSomethingWithFileContents();
+      }
+    });
+
+    /**
+     * This is the callback of the addEventListener, it will be executed each time user select a file
+     * It's linked below, on the addEventListener call
+     */
+    function readSingleFile(e) {
+      //retrieve the first selected file the user has select
+      var file = e.target.files[0];
+
+      // If no file selected, abort this function execution
+      if (!file) {
+        return;
+      }
+      // If a file is selected, create a new file reader
+      var reader = new FileReader();
+
+      // Define a callback to be run when the file will be loaded
+      reader.onload = function(e) {
+
+        // You can still use some console.log for debugging purpose
+        //console.log(e);
+
+        // Retrive the content of the loaded file
+        var contents = e.target.result;
+
+        // To enable some persistency, store the contents into a localeStorage
+        // It means next time you load the page, the data could come from the browser cache
+        localStorage.setItem('stored_data', contents );
+
+        // Will can now call the logic what we need to do with the file content
+        doSomethingWithFileContents();
+      };
+
+      // Trigger the file reader to load the selected file
+      reader.readAsText(file);
+    }
+
+    /**
+     * This function will be executed when data is ready.
+     * You should implements the logic that should be run with the file data
+     *
+     *  - Data is ready could mean:
+     *      - Data was available through localStorage
+     *      - Data has just been loaded through FileReader
+     */
+    function doSomethingWithFileContents() {
+
+      // Retrieve the cached data
+      var loadedData = localStorage.getItem('stored_data');
+
+      // Get the element that will display the raw data
+      var element = document.getElementById('file-content');
+      // Set its content to the storedData
+      element.textContent = loadedData;
+
+      // Once again, I strongly recommend you to use JSON formatted value in the file
+      // It will enable some easy transformation/parsing from js side
+
+
+    }
+
+    // Place a addEventListener on the file-input id element
+    // When its value changed, run the readSingleFile function
+    document.getElementById('file-input').addEventListener('change', readSingleFile, false);
+</script>
+</body>

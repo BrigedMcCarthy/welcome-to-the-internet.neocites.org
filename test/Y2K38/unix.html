@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>Demo: Using Date.now() Method</h1>
+<p id="currentDate"></p>
+<script>
+  const time = Date.now();
+  const date = new Date(time);
+  const currentDate = date.toString();
+  document.getElementById("currentDate").innerHTML = "Current Date and Time: " + currentDate;
+</script>
+</body>
+</html>

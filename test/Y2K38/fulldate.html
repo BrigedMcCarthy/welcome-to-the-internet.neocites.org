@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head> <!-- this code would break if I could time travel -->
+<body>
+<h1>Demo: Current Date</h1>
+<p id="p1"></p>
+<script>
+	var date = new Date();
+	var current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+	document.getElementById("p1").innerHTML = current_date;
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+https://welcome-to-the-internet.neocities.org/
+|-- index.html
+|-- new_page.html
+|-- updates.html
+|-- github.html
+`-- weather.html
+.well-known/
+`-- discord.txt
+test/
+|-- 3dtest/
+|   `-- 3dtest.html
+|-- management/
+|   `-- debug.html
+|-- mobile/
+|   |-- mobile.html
+|   `-- redirect.html
+|-- physics/
+|   |-- engine.html
+|   `-- dot.js
+|-- usertest/
+|   |-- anotherpasswordtest.html
+|   |-- evenmorepasswords.html
+|   |-- loading.html
+|   |-- login.html
+|   |-- loginredirect.html
+|   |-- moreloginpages.html
+|   |-- password.html
+|   |-- password2.html
+|   |-- saving.html
+|   |-- signup.html
+|   `-- passwords.txt
+|-- backgroundtest2.html
+|-- hovermenu1.html
+|-- test.html
+|-- testbackground.html
+|-- timetest.html
+|-- titlerevamp1.html
+`-- style2.css
+unused
