@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>Demo: Current Month</h1>
+<p id="month"></p>
+<script>
+  const currentDate = new Date();
+  const month = currentDate.getMonth() + 1; // Adding 1 to convert the range from 0-11 to 1-12
+  document.getElementById("month").innerHTML = "Current Month (1-12): " + month;
+</script>
+</body>
+</html>

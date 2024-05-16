@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>Demo: Extracting Date and Time</h1>
+<p id="extractedDateTime"></p>
+<script>
+  const date = new Date().toUTCString();
+  const extractedDateTime = date.slice(5, 16);
+  document.getElementById("extractedDateTime").innerHTML = "Extracted Date and Time: " + extractedDateTime;
+</script>
+</body>
+</html>

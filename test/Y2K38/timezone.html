@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>Demo: Time in Different Timezones</h1>
+<p id="easternTime"></p>
+<p id="londonTime"></p>
+<script>
+  const date = new Date();
+  // Display time in Eastern Time (New York)
+  const easternTime = date.toLocaleString("en-US", { timeZone: "America/New_York", timeStyle: "long" });
+  document.getElementById("easternTime").innerHTML = "Eastern Time (New York): " + easternTime;
+  // Display time in London Time
+  const londonTime = date.toLocaleString("en-GB", { timeZone: "Europe/London", timeStyle: "long" });
+  document.getElementById("londonTime").innerHTML = "London Time: " + londonTime;
+</script>
+</body>
+</html>

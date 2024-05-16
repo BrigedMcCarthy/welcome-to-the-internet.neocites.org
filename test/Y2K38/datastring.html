@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>Demo: Using toLocaleDateString() Method</h1>
+<p id="formattedDate"></p>
+<script>
+  // Example a: Using the method without arguments
+  const date1 = new Date().toLocaleDateString();
+  document.getElementById("formattedDate").innerHTML += "Date without arguments: " + date1 + "<br>";
+  // Example b: Using a specific locale code
+  const date2 = new Date().toLocaleDateString("en-IN");
+  document.getElementById("formattedDate").innerHTML += "Date with locale 'en-IN': " + date2 + "<br>";
+  // Example c: Customizing the date using options
+  const date = new Date();
+  const options = {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  };
+  const date3 = date.toLocaleDateString('en-IN', options);
+  document.getElementById("formattedDate").innerHTML += "Customized Date: " + date3;
+</script>
+</body>
+</html>

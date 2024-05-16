@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1>Demo: Current Seconds</h1>
+<p id="seconds"></p>
+<script>
+  const currentDate = new Date();
+  const seconds = currentDate.getSeconds();
+  document.getElementById("seconds").innerHTML = "Current Seconds (0-59): " + seconds;
+</script>
+</body>
+</html>
