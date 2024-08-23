@@ -47,7 +47,7 @@ nav ul li {
   margin-left: 10px;
   color: DarkGrey;
 }
-
+/* BUGGY AS FUCK BLURRING CODE!! */
 .blurred
 {
   z-index: -1;
