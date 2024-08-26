@@ -48,6 +48,7 @@ nav ul li {
   color: DarkGrey;
 }
 /* BUGGY AS FUCK BLURRING CODE!! */
+/* FIX IN NEXT PATCH!!!! */
 .blurred
 {
   z-index: -1;
