@@ -61,8 +61,8 @@ nav ul li {
 background-image: url("Ai2.png");
 /*  background-image: url("Ai2.png"); */
   background-image: url("test82.png");
-  width: 100vw;
-  height: 100vh;
+  width: 1vw;
+  height: 1vw;
   filter: blur(10px);
   position: absolute;
   background-repeat: repeat;
