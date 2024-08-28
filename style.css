@@ -1,6 +1,8 @@
 body {
   background: black;
   font-family: Verdana;
+  overflow-x: hidden
+  width: 1024px
 }
 p {
   color: white;  
