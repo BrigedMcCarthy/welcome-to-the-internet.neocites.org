@@ -59,7 +59,7 @@ nav ul li {
   width: 100%;
   height: 100%;
   filter: blur(10px);
-  position: absolute;
+  position: sticky;
 /*background-repeat: repeat; */
   background-attachment: fixed; 
   background-size: cover;
