@@ -1,3 +1,3 @@
 # welcome-to-the-internet.neocites.org
 ## This site is in HEAVY development
-### hello world
+### Mainly a collection of test features for me to use as a base for later projects of mine.
