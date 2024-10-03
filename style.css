@@ -1,6 +1,6 @@
 body {
-  background: black;
   font-family: Verdana;
+  overflow-x: hidden
 }
 p {
   color: white;  
@@ -62,8 +62,8 @@ background-image: url("Ai2.png");
   width: 100vw;
   height: 100vh;
   filter: blur(10px);
-  position: absolute;
-  background-repeat: repeat;
+  position: fixed;
+/*background-repeat: repeat; */
   background-attachment: fixed; 
   background-size: cover;
 }

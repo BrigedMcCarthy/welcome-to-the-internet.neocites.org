@@ -6,14 +6,24 @@
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>Welcome</title>
 </head>
-
+<script>
+  function detectMobile() {
+  var a;
+  if (navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)) {
+      a = true ;
+  } else {
+      a = false ;
+  }
+  return a
+}</script>
 <center>
-<script type="text/javascript">
-if (navigator.userAgent.indexOf('Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Mobile/15E148 Safari/604.1') == -1)
-{
-window.location.replace("https://welcome-to-the-internet.neocities.org/");
-}
-</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
