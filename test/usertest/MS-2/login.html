@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html> 
+    <body>
+        <input type="text" name="logsarchives" id="logsarchives" autocomplete="off"  placeholder="Enter login" onkeydown="redirect(this)">
+    </body>
+    <script>
+        function redirect(ele) {
+            if(event.key === 'Enter') {
+                if(ele.value === 'test')
+                     window.location.href = 'https://brigedmccarthy.github.io/welcome-to-the-internet.neocites.org/test/usertest/MS-2/placeholder.txt';
+                else
+                    alert("Invalid");
+            }
+        }
+    </script>
+</html>
