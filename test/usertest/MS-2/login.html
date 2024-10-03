@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html> 
+    <body>
+        <input type="text" name="logsarchives" id="logsarchives" autocomplete="off"  placeholder="Enter Console Command" onkeydown="redirect(this)">
+    </body>
+    <script>
+        function redirect(ele) {
+            if(event.key === 'Enter') {
+                if(ele.value === 'test')
+                     window.location.href = './test/MS-2/placeholder.txt';
+                else
+                    alert("Invalid");
+            }
+        }
+    </script>
+</html>
