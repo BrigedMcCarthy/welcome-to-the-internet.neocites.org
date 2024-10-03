@@ -49,6 +49,7 @@ nav ul li {
 }
 /* BUGGY AS FUCK BLURRING CODE!! */
 /* FIX IN NEXT PATCH!!!! */
+/* Never worked on because I forgot how it works */
 
 .blurred
 {
@@ -56,9 +57,9 @@ nav ul li {
   border-style: solid; 
   border-width: 3px; 
 
-background-image: url("Ai2.png");
-/*  background-image: url("Ai2.png"); */
-  background-image: url("test82.png");
+background-image: url("img/Ai2.png");
+/*  background-image: url("img/Ai2.png"); */
+  background-image: url("img/test82.png");
   width: 100vw;
   height: 100vh;
   filter: blur(10px);
