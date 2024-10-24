@@ -3,16 +3,12 @@
 <head></head>
 <body>
 <h1>Demo: Time in Different Timezones</h1>
-<p id="easternTime"></p>
-<p id="londonTime"></p>
+<p id="centraltime"></p>
 <script>
   const date = new Date();
   // Display time in Eastern Time (New York)
-  const easternTime = date.toLocaleString("en-US", { timeZone: "America/New_York", timeStyle: "long" });
-  document.getElementById("easternTime").innerHTML = "Eastern Time (New York): " + easternTime;
-  // Display time in London Time
-  const londonTime = date.toLocaleString("en-GB", { timeZone: "Europe/London", timeStyle: "long" });
-  document.getElementById("londonTime").innerHTML = "London Time: " + londonTime;
+  const centraltime = date.toLocaleString("en-US", { timeZone: "America/Chicago", timeStyle: "long" });
+  document.getElementById("centraltime").innerHTML = "Central time: " + centraltime;
 </script>
 </body>
 </html>
