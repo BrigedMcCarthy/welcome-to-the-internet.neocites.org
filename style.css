@@ -83,4 +83,5 @@ background-image: url("img/Ai2.png");
 
 img {
   border-radius: 50%;
+  border: 1px solid #555;
 }
