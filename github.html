@@ -51,8 +51,15 @@ body {
 <img src="img/pfp.png"align="left">
 <h2 align="left">Briged McCarthy</h2>
 <h3 align="left">She/Her or Them/Them</h3>
-<h4 align="left">🖈St. Louis</h4>
+<h4 align="left">🖈 St. Louis</h4>
+<p id="centraltime"></p>
 <h4 align="left">🕔</h4>
+<script>
+  const date = new Date();
+  // Display time in Central (Chicago)
+  const centraltime = date.toLocaleString("en-US", { timeZone: "America/Chicago", timeStyle: "short" });
+  document.getElementById("centraltime").innerHTML = " " + centraltime;
+</script>
 <p><a href="https://github.com/BrigedMcCarthy">Link to account page</a></p>
 </div>
 
