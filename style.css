@@ -80,3 +80,7 @@ background-image: url("img/Ai2.png");
   filter: blur(0px);
 
 }
+
+img {
+  border-radius: 50%;
+}
