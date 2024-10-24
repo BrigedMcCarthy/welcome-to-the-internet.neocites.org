@@ -53,16 +53,17 @@ body {
 <h3 align="left">She/Her or Them/Them</h3>
 <h4 align="left">🖈 St. Louis</h4>
 <h4 align="left">🕔</h4> <h4 id="centraltime" align="left"></h4>
+<div style="clear: both">
+  <h4 style="float: left">🕔</h2>
+  <h4 style="float: left" id="centraltime"></h3>
+</div>
 <script>
   const date = new Date();
   // Display time in Central (Chicago)
   const centraltime = date.toLocaleString("en-US", { timeZone: "America/Chicago", timeStyle: "short" });
   document.getElementById("centraltime").innerHTML = " " + centraltime;
 </script>
-<div style="clear: both">
-  <h2 style="float: left">Heading 1</h2>
-  <h3 style="float: left">Heading 2</h3>
-</div>
+
 <p><a href="https://github.com/BrigedMcCarthy">Link to account page</a></p>
 </div>
 
