@@ -39,31 +39,29 @@ body {
 </style>
 <div class="topnav">
   <a href="index.html">Home</a>
-  <a href="new_page.html">About</a>
   <a href="Updates.html">Updates</a>
-  <a class="active" href="github.html">Github</a>
+  <a href="new_page.html">Site History</a>
+  <a class="active" href="github.html">About Me</a>
 </div>
 <div class="blurred"></div>
 <div class="middlecoversecond">
 <center>
-  <h1>Github</h1>
+  <h1>About Me</h1>
 </center>
-<!-- I might want to link my github here -->
+<img src="img/pfp.png"align="left">
+<h2 align="left"href="https://github.com/BrigedMcCarthy">Briged McCarthy</h2>
+<p align="left">She/Her or Them/Them</p>
+<p align="left">🖈 St. Louis</p>
+<p style="float: left">🕔</p>
+<p style="float: left" id="centraltime"></p>
+<script>
+  const date = new Date();
+  // Display time in Central (Chicago)
+  const centraltime = date.toLocaleString("en-US", { timeZone: "America/Chicago", timeStyle: "short" });
+  document.getElementById("centraltime").innerHTML = " " + centraltime;
+</script>
 
-<p><a href="https://github.com/BrigedMcCarthy">Github</a></p>
 </div>
-<!--https://github.com/Biggiehampster-->
-<!-- If you get here, something has gone terribly wrong. -->
-<!-- Pre April 2024 design revamp nav ui
-<h1>HYPERLINKS</h1>
-<header>
-  <nav>
-    <ul>
-      <li>
-       <a href="index.html">Home</a> <a href="new_page.html">About</a> <a href="Updates.html">Updates</a> <a href="github.html">Github</a>
-      </li>
-    </ul>
-  </nav>
-</header> -->
+
 </center>
 </html>
