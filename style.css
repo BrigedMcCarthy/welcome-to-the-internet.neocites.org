@@ -108,7 +108,7 @@ body{
 }
 .navbar{
   position: relative;
-  height: 120px;
+  height: 100px;
   width: 500px;
   background: #fff;
   border-radius: 20px;
@@ -128,7 +128,7 @@ body{
 }
 .navbar ul li a{
   position: relative;
-  height: 100px;
+  height: 120px;
   width: 90px;
   display: flex;
   align-items: center;
