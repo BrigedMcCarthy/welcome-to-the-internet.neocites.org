@@ -3,11 +3,12 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon2.ico">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <title>About This Webpage</title>
 </head>
 <center>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<!--<style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +43,53 @@ body {
   <a href="Updates.html">Updates</a>
   <a class ="active" href="new_page.html">Site History</a>
   <a href="github.html">About Me</a>
+</div> -->
+<div class="navbar">
+  <ul>
+    <li>
+      <a href="index.html">
+        <i class='bx bx-home icon'></i>
+        <i class='bx bxs-home activeIcon'></i>
+      </a>
+    </li>
+    <li>
+      <a href="github.html">
+        <i class='bx bx-user icon'></i>
+        <i class='bx bxs-user activeIcon'></i>
+      </a>
+    </li>
+    <li>
+      <a href="Updates.html">
+        <i class='bx bx-heart icon'></i>
+        <i class='bx bxs-heart activeIcon'></i>
+      </a>
+    </li>
+    <li class="active">
+      <a href="new_page.html">
+        <i class='bx bx-cog icon'></i>
+        <i class='bx bxs-cog activeIcon'></i>
+      </a>
+    </li>
+    <div class="indicator"></div>
+  </ul>
 </div>
+
+<script>
+
+const navBar = document.querySelector(".navbar")
+      allLi = document.querySelectorAll("li");
+
+allLi.forEach((li, index) => {
+   li.addEventListener("click" , e =>{
+     navBar.querySelector(".active").classList.remove("active");
+     li.classList.add("active");
+
+     const indicator = document.querySelector(".indicator");
+     indicator.style.transform = `translateX(calc(${index * 90}px))`;
+   });
+});
+
+</script>
 <div class="blurred"></div>
 <div class="middlecoversecond">
 
@@ -53,7 +100,7 @@ body {
       Take one down, patch it around 
       117 little bugs in the code-->
 <center>
-  <h1>ABOUT THIS WEBPAGE</h1>
+  <h1>About This Webpage</h1>
 </center>
     <p>I made the first version of this website in 6th grade on a site called <a href="https://trinket.io/html/66492eb31a">Trinket.io</a>. After I made the orginal version of the site I pushed a major update because we just learned how to add nav bars and backgrounds to a site. At the time of that update the site was very <strong>VERY</strong> unstable. After 6th grade ended I abandoned the site to work on other stuff during the summer. At the start of 7th grade I found out about Neocities and ported all of my code from Trinket to Neocities. The change to Neocities broke a lot of things that I made in Trinket. For example you can see that I have the removed broken web elements on the updates page. That was added because Neocities did not like to display ↓ which should display as the down arrow. Now at the time of me writing this its <strike>the end of 8th grade</strike> my freshman year of highschool and im pushing small stability updates to this site every couple days and major ones every 2 ish weeks. <i>Best regards, Briged McCarthy</i></p>
 
@@ -72,4 +119,5 @@ body {
   </nav>
 </header> -->
 </center>
+<div class="blurred"></div>
 </html>

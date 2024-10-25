@@ -3,11 +3,11 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="favicon2.ico">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <title>Github</title>
 </head>
 <center>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+<!--<style>
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +42,53 @@ body {
   <a href="Updates.html">Updates</a>
   <a href="new_page.html">Site History</a>
   <a class="active" href="github.html">About Me</a>
+</div> -->
+<div class="navbar">
+  <ul>
+    <li>
+      <a href="index.html">
+        <i class='bx bx-home icon'></i>
+        <i class='bx bxs-home activeIcon'></i>
+      </a>
+    </li>
+    <li class="active">
+      <a href="github.html">
+        <i class='bx bx-user icon'></i>
+        <i class='bx bxs-user activeIcon'></i>
+      </a>
+    </li>
+    <li>
+      <a href="Updates.html">
+        <i class='bx bx-heart icon'></i>
+        <i class='bx bxs-heart activeIcon'></i>
+      </a>
+    </li>
+    <li>
+      <a href="new_page.html">
+        <i class='bx bx-cog icon'></i>
+        <i class='bx bxs-cog activeIcon'></i>
+      </a>
+    </li>
+    <div class="indicator"></div>
+  </ul>
 </div>
+
+<script>
+
+const navBar = document.querySelector(".navbar")
+      allLi = document.querySelectorAll("li");
+
+allLi.forEach((li, index) => {
+   li.addEventListener("click" , e =>{
+     navBar.querySelector(".active").classList.remove("active");
+     li.classList.add("active");
+
+     const indicator = document.querySelector(".indicator");
+     indicator.style.transform = `translateX(calc(${index * 90}px))`;
+   });
+});
+
+</script>
 <div class="blurred"></div>
 <div class="middlecoversecond">
 <center>
@@ -64,4 +110,5 @@ body {
 </div>
 
 </center>
+<div class="blurred"></div>
 </html>
