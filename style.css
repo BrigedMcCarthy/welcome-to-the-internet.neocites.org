@@ -128,7 +128,7 @@ body{
 }
 .navbar ul li a{
   position: relative;
-  height: 120px;
+  height: 100px;
   width: 90px;
   display: flex;
   align-items: center;
