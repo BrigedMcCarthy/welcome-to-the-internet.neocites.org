@@ -11,6 +11,14 @@ p {
   -webkit-text-stroke-color: black;*/
   text-shadow: black 0px 0px 10px;
 }
+h2 {
+  color: white;  
+  font-family: Verdana;
+  font-weight: bold;
+  /*-webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;*/
+  text-shadow: black 0px 0px 10px;
+}
 
 marquee { 
   color: white;
