@@ -81,7 +81,6 @@ const navBar = document.querySelector(".navbar")
 
 allLi.forEach((li, index) => {
    li.addEventListener("click" , e =>{
-     e.preventDefault(); //preventing from submitting
      navBar.querySelector(".active").classList.remove("active");
      li.classList.add("active");
 
