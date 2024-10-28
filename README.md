@@ -1,4 +1,5 @@
 # This site is under heavy development
 
 ## TODO 
-- [] Add github account info to github.html
+- [x] Add github account info to github.html
+- [x] New site ui
