@@ -56,7 +56,6 @@ nav ul li {
   margin-left: 10px;
   color: DarkGrey;
 }
-/* BUGGY AS FUCK BLURRING CODE!! */
 /* FIX IN NEXT PATCH!!!! */
 /* Never worked on because I dont want to break it */
 
@@ -100,7 +99,7 @@ img {
   font-family: 'Poppins', sans-serif;
 }
 body{
-  height: 100vh;
+  /* Credit to youngwghs for helping me with ui not displaying correctly */
   display: flex;
   align-items: center;
   justify-content: center;
