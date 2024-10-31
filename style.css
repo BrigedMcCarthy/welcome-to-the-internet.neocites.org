@@ -71,9 +71,9 @@ background-image: url("img/test82.png");
   width: 100vw;
   height: 100vh;
   filter: blur(10px);
-  position: fixed;
+  position: sticky;
 /*background-repeat: repeat; */
-  background-attachment: fixed; 
+  background-attachment: scroll; 
   background-size: cover;
 }
 
@@ -99,7 +99,8 @@ img {
   font-family: 'Poppins', sans-serif;
 }
 body{
-  /* Credit to youngwghs for helping me with ui not displaying correctly */
+  /* thanks to youngwghs for helping me with the nav ui not displaying
+  at the top of the page on larger screens */
   display: flex;
   align-items: center;
   justify-content: center;
