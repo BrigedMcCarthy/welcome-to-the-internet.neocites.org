@@ -64,9 +64,6 @@ nav ul li {
   z-index: -3;
   border-style: solid; 
   border-width: 3px; 
-
-background-image: url("img/test82.png");
-/*  background-image: url("img/Ai2.png"); */
   background-image: url("img/test82.png");
   width: 100vw;
   height: 100vh;
@@ -74,7 +71,7 @@ background-image: url("img/test82.png");
   position: sticky;
 /*background-repeat: repeat; */
   background-attachment: scroll; 
-  background-size: cover;
+/*  background-size: cover;
 }
 
 .middlecoversecond{
@@ -105,7 +102,6 @@ body{
   justify-content: center;
 }
 .navbar{
-  z-index: -2;
   position: relative;
   height: 50px;
   width: 400px;
