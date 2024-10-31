@@ -61,7 +61,7 @@ nav ul li {
 
 .blurred
 {
-  z-index: -4;
+  z-index: -3;
   border-style: solid; 
   border-width: 3px; 
 
@@ -81,8 +81,7 @@ background-image: url("img/test82.png");
   margin-left: 0%;
   margin-right: 0%;
   height: 550px;
-  position: center;
-  position: relative;
+  position: sticky;
   z-index: 1;
   filter: blur(0px);
 
@@ -106,6 +105,7 @@ body{
   justify-content: center;
 }
 .navbar{
+  z-index: -2;
   position: relative;
   height: 50px;
   width: 400px;
