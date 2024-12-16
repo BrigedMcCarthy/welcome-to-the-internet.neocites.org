@@ -2,6 +2,7 @@
 body {
   font-family: Verdana;
   overflow-x: hidden
+  background-image: url("img/test82.png");
 }
 p {
   color: white;  
