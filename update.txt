@@ -1,0 +1,22 @@
+Fixed the update page not having the updated nav ul
+Removed broken web elements
+Made design more consistent for all pages
+Added audio to the pages
+Renamed site
+Bug fixes and added code comments
+Remade the about page
+complete rework of the background code
+so it allows swapping all the backgrounds at once
+Replaced the old nav ui with a more modern one
+patched out most of the errors
+Reorganized the file structure of the site
+Made a <a href="https://trello.com/b/l6qkWxLt/mywebsite">Trello</a> for the site
+New Favicon and fixed some minor bugs
+Organized test folder so I can find assets quicker
+Removed random image of JU-87
+Deleted unused assets
+Changed github page to about me
+Updated Nav ui
+Removed the blur effect because it caused to many bugs
+Increased the shadow on the text to allow for it to be read easier
+Moved the update log into a text file so the formatting on Updates.html wont get screwed up 
