@@ -74,6 +74,23 @@ body {
   </ul>
 </div>
 
+<script>
+
+const navBar = document.querySelector(".navbar")
+      allLi = document.querySelectorAll("li");
+
+allLi.forEach((li, index) => {
+   li.addEventListener("click" , e =>{
+     navBar.querySelector(".active").classList.remove("active");
+     li.classList.add("active");
+
+     const indicator = document.querySelector(".indicator");
+     indicator.style.transform = `translateX(calc(${index * 90}px))`;
+   });
+});
+
+</script>
+<div class="blurred"></div>
 <div class="middlecoversecond">
 
   <!-- Here be dragons  -->
