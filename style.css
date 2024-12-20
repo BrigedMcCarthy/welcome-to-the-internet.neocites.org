@@ -62,9 +62,11 @@ nav ul li {
 
 .blurred
 {
+
   z-index: -3;
   border-style: solid; 
   border-width: 3px; 
+
   background-image: url("img/test82.png");
   width: 100vw;
   height: 100vh;
@@ -101,6 +103,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .navbar{
   position: relative;
