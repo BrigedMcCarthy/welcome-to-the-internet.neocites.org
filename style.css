@@ -3,6 +3,9 @@ body {
   font-family: Verdana;
   /*overflow-x: hidden */
   background-image: url("img/test82.png");
+
+}
+.background-image {
   filter: blur(8px);
   -webkit-filter: blur(8px);
 }
