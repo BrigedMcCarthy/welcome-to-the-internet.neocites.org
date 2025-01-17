@@ -185,3 +185,8 @@ ul .indicator::after{
   border-bottom-left-radius: 20px;
   box-shadow: 0 10px 0 #7d2ae8;
 }
+
+/* Borrowed from mangokitten.com */
+.hidden {
+  display: none;
+}
