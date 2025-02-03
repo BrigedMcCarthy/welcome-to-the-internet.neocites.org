@@ -95,50 +95,6 @@ nav ul li {
 /* FIX IN NEXT PATCH!!!! */
 /* Never worked on because I dont want to break it */
 
-.blurred
-{
-
-  z-index: -3;
-  border-style: solid; 
-  border-width: 3px; 
-
-  background-image: url("img/test82.png");
-  width: 100vw;
-  height: 100vh;
-  position: sticky;
-/*background-repeat: repeat; */
-  background-attachment: scroll; 
-/*  background-size: cover;
-}
-
-.middlecoversecond{
-  margin-left: 0%;
-  margin-right: 0%;
-  height: 550px;
-  position: sticky;
-  z-index: 1;
-  filter: blur(0px);
-
-}
-
-img {
-  border-radius: 50%;
-  border: 1px solid #555;
-}
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-body{
-  /* thanks to youngwghs for helping me with the nav ui not displaying
-  at the top of the page on larger screens */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
 .navbar{
   position: relative;
   height: 50px;
