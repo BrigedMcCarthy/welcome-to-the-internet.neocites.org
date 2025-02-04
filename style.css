@@ -6,7 +6,7 @@ body {
 
 }
 
-.bg-image {
+#bg-image {
   /* The image used */
   background-image: url("img/test82.png");
 
