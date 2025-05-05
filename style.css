@@ -1,147 +1,159 @@
-
-body {
-  font-family: Verdana;
-  /*overflow-x: hidden */
-  background-image: url("img/test82_blur.png");
-  background-size: cover;
-}
-
-
-
-
-p {
-  color: white;  
-  font-family: Verdana;
-  font-weight: bold;
-  /*-webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;*/
-  text-shadow: black 1px 0px 10px;
-}
-h2 {
-  color: white;  
-  font-family: Verdana;
-  font-weight: bold;
-  /*-webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;*/
-  text-shadow: black 1px 0px 10px;
-}
-
-marquee { 
-  color: white;
-  font-family: Verdana;
-  text-shadow: black 1px 0px 10px;
-}
-
-h1 {
-  color: white;
-  font-family: Verdana;
-  font-weight: bold;
-  text-shadow: black 1px 0px 10px;
-}
-
-nav ul {
+.topnav{
+    /*NOTE DO NOT ADD PADDING TO THIS UNLESS YOU WANT GIANT BUTTONS */
+      background-color: black;/* here are some alt color codes FF0000, 800080, FFC000 */
+/*      position: fixed; */
+      position: static;
+      color: white;
+    }
+    
+    div {
+      padding: 0% !important;
+      background-color: black;
+      position: sticky;
+      top: 0;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial Unicode MS;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
   
-  background-color: #ffffff;
-  border-style: solid;
-  border-color: #e80605;
-  border-width: 2px;
-  border-radius: 10px;
-  font-family: Verdana;
-  font-weight: bold;
-}
+  .profile {
+    height: 5%;
+    width: 5%;
+    float: left;
+  }
+  
+  html {
+    background-color: gray;
+    background-image: url("img/sitebg.png");
+    background-repeat: repeat;
+    background-size: cover;
+  
+  }
 
-nav ul li a {
-  text-decoration: none;
-  color: #bb3600;
-}
+  .frontpage {
+    background-image: url(MS-FP98\images\Textures\Water.jpg) !important;
+    background-repeat: repeat;
+    background-size: cover;
+  }
 
-nav ul li {
-  list-style-type: none;
-  display: inline;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-/* FIX IN NEXT PATCH!!!! */
-/* Never worked on because I dont want to break it */
+  h4{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  q{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .mailto:hover {
+    filter: drop-shadow(3px 3px red ) drop-shadow(-3px -3px blue) ;
+  }
+  
+  p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  body {
+    padding: 5px;
+    margin: 0;
+  }
+  
+  
+  /* Weird names bec.use this part was grabbed from a site I made in 6th grade */
+  
+  
+  .tinyPicture {
+    background-color: gray;
+    display:flex
+  
+  }
+  .sdk {
+    width: 100px;
+    height: 15%;
+    border: 2px solid #F0FFFF;
+    box-sizing: border-box;
+    background-color: grey;
+    display:flex
+  }
+  
+  section {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+    background-color: #F0FFFF
+    box-sizing: border-box;
+  }
+  
+  footer {
+    background-color: #F0FFFF;
+    border: 2px solid #F0FFFF;
+    box-sizing: border-box;
+  }
+  /* old code ends here */
+  
+  .profile_emp {
+    height: 2%;
+    width: 2%;
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .terminated {
+    color: red;
+    text-decoration: line-through;
+  }
+  
+  hr {
+    border: 1px solid transparent;
+  }
+  
+  .lgrad {
+    float: left;
+    height: 15%;
+    width: 15%;
+  }
+  
+  small{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /*.logo {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  */
+  
+  #clock {
+    color: black;
+    background-color: transparent; !important
+  }
 
-.navbar{
-  position: relative;
-  height: 50px;
-  width: 400px;
-  background: #fff;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.navbar ul{
-  position: relative;
-  display: flex;
-}
-.navbar ul li{
-  position: relative;
-  list-style-type: none;
-}
-.navbar ul li a{
-  position: relative;
-  height: 120px;
-  width: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-.navbar ul li a i{
-  position: absolute;
-  font-size: 38px;
-  color: #7d2ae8;
-}
-ul li a i.activeIcon{
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.6s ease;
-  transition-delay: 0.2s;
-}
-.navbar ul li.active a i{
-  opacity: 1;
-  pointer-events: auto;
-}
-.navbar ul .indicator{
-  position: absolute;
-  bottom: -19px;
-  left: 34px;
-  height: 36px;
-  width: 25px;
-  background: #7d2ae8;
-  border-radius: 50%;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-ul .indicator::before{
-  content: "";
-  position: absolute;
-  left: -15px;
-  bottom: 50%;
-  height: 22px;
-  width: 20px;
-  background: #fff;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0 10px 0 #7d2ae8;
-}
-ul .indicator::after{
-  content: "";
-  position: absolute;
-  right: -15px;
-  bottom: 50%;
-  height: 22px;
-  width: 20px;
-  background: #fff;
-  border-bottom-left-radius: 20px;
-  box-shadow: 0 10px 0 #7d2ae8;
-}
-
-/* Borrowed from mangokitten.com */
-.hidden {
-  display: none;
-}
+  .bottom {
+    bottom: 0;
+  }
