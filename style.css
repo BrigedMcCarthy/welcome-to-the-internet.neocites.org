@@ -107,9 +107,7 @@
   }
   
   footer {
-    background-color: #F0FFFF;
-    border: 2px solid #F0FFFF;
-    box-sizing: border-box;
+    bottom: 0;
   }
   /* old code ends here */
   
